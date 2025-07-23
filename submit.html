@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Alert Example</title>
+    <style>
+        .btn2 {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        /* Container for the loading animation */
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Styling for the loading text */
+.loading-text {
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+}
+
+.loading-text span {
+    animation: bounce 1.5s infinite;
+    animation-timing-function: ease-in-out;
+    display: inline-block;
+    margin: 0 2px;
+}
+
+/* Keyframes for the bounce animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Adding delays for each letter to create a wave effect */
+.loading-text span:nth-child(1) { animation-delay: 0s; }
+.loading-text span:nth-child(2) { animation-delay: 0.1s; }
+.loading-text span:nth-child(3) { animation-delay: 0.2s; }
+.loading-text span:nth-child(4) { animation-delay: 0.3s; }
+.loading-text span:nth-child(5) { animation-delay: 0.4s; }
+.loading-text span:nth-child(6) { animation-delay: 0.5s; }
+.loading-text span:nth-child(7) { animation-delay: 0.6s; }
+
+    </style>
+</head>
+<body>
+    <div class="loading-countiner">
+        <div class="loading-text">
+            <span>L</span>
+            <span>O</span>
+            <span>A</span>
+            <span>D</span>
+            <span>I</span>
+            <span>N</span>
+            <span>G</span>
+        </div>
+    </div>
+    <details>
+        <summary>
+            let read
+        </summary>
+        <p>/* Container for the loading animation */
+            .loading-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #f0f0f0;
+            }
+            
+            /* Styling for the loading text */
+            .loading-text {
+                font-size: 40px;
+                font-weight: bold;
+                display: flex;
+            }
+            
+            .loading-text span {
+                animation: bounce 1.5s infinite;
+                animation-timing-function: ease-in-out;
+                display: inline-block;
+                margin: 0 2px;
+            }
+            
+            /* Keyframes for the bounce animation */
+            @keyframes bounce {
+                0%, 100% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(-20px);
+                }
+            }
+            
+            /* Adding delays for each letter to create a wave effect */
+            .loading-text span:nth-child(1) { animation-delay: 0s; }
+            .loading-text span:nth-child(2) { animation-delay: 0.1s; }
+            .loading-text span:nth-child(3) { animation-delay: 0.2s; }
+            .loading-text span:nth-child(4) { animation-delay: 0.3s; }
+            .loading-text span:nth-child(5) { animation-delay: 0.4s; }
+            .loading-text span:nth-child(6) { animation-delay: 0.5s; }
+            .loading-text span:nth-child(7) { animation-delay: 0.6s; }
+            </p>
+    </details>
+
+    <button type="submit" id="submitBtn" class="btn btn2">Submit</button>
+
+    <script>
+        // JavaScript to handle button click event
+        document.getElementById('submitBtn').addEventListener('click', function() {
+            alert('Button clicked!');
+        });
+    </script>
+
+</body>
+</html>

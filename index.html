@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Corrected extra quotes and misplaced 'en' -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/789293137c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i> <!-- Added onclick for openmenu -->
+        </nav>
+        <div class="header-text">
+            <p>WEB DEVELOPMENT</p>
+            <h1>Hi, I'm <span>SARVAJI M</span> <br>from India</h1>
+            <p>It sounds like you're in India right now! India is an incredibly diverse and vibrant country with a rich history, varied cultures, and beautiful landscapes. Whether you’re there for travel, work, or study, you’re in a place with a lot to offer.
+
+                Here’s a brief overview of what you might experience or learn about India:
+                
+                Culture and History
+                Historical Sites: India is home to many UNESCO World Heritage Sites, including the Taj Mahal, Qutub Minar, and Red Fort.
+                Festivals: India celebrates a wide array of festivals such as Diwali, Holi, Eid, and Pongal, each with unique traditions and celebrations.
+                Cuisine
+                Diverse Flavors: Indian cuisine varies by region, offering everything from spicy curries and biryanis to dosas and chaats.
+                Street Food: Try local street food like pani puri, samosas, and vada pav for a true taste of India.
+                Natural Beauty
+                Landscapes: From the Himalayas in the north to the beaches of Goa and Kerala in the south, India has diverse landscapes and natural beauty.
+                Wildlife: Visit national parks like Ranthambore and Kaziranga to see India’s unique wildlife.
+                Languages and People
+                Languages: India has 22 officially recognized languages, including Hindi, Tamil, Bengali, and many others.
+                People: The people of India are known for their hospitality and diverse cultural backgrounds.</p>
+        </div>
+    </div>
+</div>
+
+<!-----------About--------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col1">
+                <img src="IMG-20240728-WA0017.jpg" alt="User Image">
+            </div>
+            <div class="about-col2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am SARVAJI M, and I'm seeking an entry-level opportunity with an esteemed organization where I can utilize my skills & enhance learning in the field of work. Capable of mastering new technologies.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web / App Interface</li> <!-- Corrected UI?UX to UI/UX -->
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Android / iOS Apps</li> <!-- Corrected IOS to iOS -->
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
+                        <li><span>2019-2021</span><br>Team Lead at StarApp</li>
+                        <li><span>2017-2019</span><br>UI/UX Design Executive at Canva Digital Ltd</li> <!-- Corrected at Canva Digital Ltd -->
+                        <li><span>2016-2017</span><br>Internship at ekart eCommerce</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2012</span><br>PhD in DIP from Anna University, Chennai</li>
+                        <li><span>2002</span><br>MTech in IT from CSIIT, Thovalai</li>
+                        <li><span>1995</span><br>BTech in IT from CSIIT, Thovalai</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------Services-------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I am very much interested in designing responsive websites. Though it's new to me, I learned a little by listening to tutorial videos and referring to textbooks.</p> <!-- Corrected spelling errors -->
+                <a href="sample.html">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>With UX, I'm interested in managing the user journey as they interact with a product or service, and with UI design, I can focus on the actual construction of that product or service's interface.</p>
+                <a href="sample.html">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Comprising user experience (UX) and user interface (UI) elements, I can ideate, define solutions, create the app's flow and structure, and make stylistic choices from colors to fonts. Designers base choices on user research and feedback.</p>
+                <a href="sample.html">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Comprising user experience (UX) and user interface (UI) elements, I can ideate, define solutions, create the app's flow and structure, and make stylistic choices from colors to fonts. Designers base choices on user research and feedback.</p>
+                    <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Comprising user experience (UX) and user interface (UI) elements, I can ideate, define solutions, create the app's flow and structure, and make stylistic choices from colors to fonts. Designers base choices on user research and feedback.</p>
+                <a href="sample.html">Learn More</a>
+        </div>
+        <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>Comprising user experience (UX) and user interface (UI) elements, I can ideate, define solutions, create the app's flow and structure, and make stylistic choices from colors to fonts. Designers base choices on user research and feedback.</p>
+            <a href="sample.html">Learn More</a>
+    </div>
+        </div>
+    </div>
+</div>
+
+<!---------------Portfolio------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="modern-website-design.webp" alt="Work 1">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world. Download it from the Play Store.</p> <!-- Corrected spelling errors -->
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="sketch-web-design-templates-6.jpeg" alt="Work 2">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you to the talented people around the world. Download it from the Play Store.</p> <!-- Corrected spelling errors -->
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="OIP.jpg" alt="Work 3">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you to the talented people around the world. Download it from the Play Store.</p> <!-- Corrected spelling errors -->
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!----------------Contact Details-------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> sarvaji621@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 6381656435</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a> <!-- Corrected empty href -->
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a> <!-- Corrected empty href -->
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a> <!-- Corrected empty href -->
+                </div>
+                <a href="images/Aji-CV.pdf" download class="btn btn2">Download CV</a> <!-- Corrected download attribute -->
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" id="submitBtn" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ SARVAJI M, made with <i class="fa-solid fa-heart"></i> by IT Dept.</p> <!-- Corrected closing <p> tag -->
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (var tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (var tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzYhH9920ghlXDJcbLAxtL7BFv-TBcP2jTEHVS7U2D4SGZq0aq0P8pT1gI5oa3yYVZz/exec'
+
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent Successfully"
+                setTimeout(function() {
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+<script>
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+        alert('Your form was successfully submitted');
+    });
+</script>
+
+</body>
+</html>
